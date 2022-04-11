@@ -29,6 +29,7 @@ public class LoginController {
         String username= user.getUsername();
         user1=user;
         loginDao.save(user1);
+
         loginDao.findByUserName(username);
 
         System.out.println(username+" "+password);
